@@ -1,4 +1,4 @@
-import { useMantineColorScheme, Paper, Container, Tabs, ActionIcon } from "@mantine/core";
+import {useMantineColorScheme, Paper, Container, Tabs, ActionIcon, Badge} from "@mantine/core";
 import { CSSProperties, useState } from "react";
 import ConfigView from "../ConfigView/ConfigView";
 import CalendarView from "../CalendarView/CalendarView";
@@ -33,7 +33,7 @@ function AppArea() {
         <ScheduleProvider>
             <FilterProvider>
                 <Container style={containerStyle} fluid bg={colorScheme === "light" ? "#d8dee9" : "#2e3440"}>
-                    <></>
+                    <Badge variant="transparent"></Badge>
                     <div style={paperWrapperStyle}>
                         <Paper
                             shadow="xl"

@@ -6,7 +6,7 @@ import {Notifications} from "@mantine/notifications";
 import '@mantine/notifications/styles.css';
 
 export default function App() {
-  return <MantineProvider theme={theme} defaultColorScheme="auto">
+  return <MantineProvider theme={theme} defaultColorScheme="light">
     <Notifications position="top-right" zIndex={1000}/>
     <AppArea />
   </MantineProvider>;
